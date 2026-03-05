@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A magical birthday surprise for Amiiiiii 💖" />
+  <title>Happy Birthday Amiiiiii ✨💖</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════
+       LOGIN PAGE
+  ════════════════════════════════════════════ -->
+  <div id="login-screen" role="main" aria-label="Login Screen">
+    <!-- Special Nicknames & Custom Text Effects -->
+    <div class="nickname nick-1">loosu</div>
+    <div class="nickname nick-2">mental</div>
+    <div class="nickname nick-3">pythiyam</div>
+    <div class="nickname nick-4">topper</div>
+    <div class="nickname nick-5">amiiiii</div>
+    <div class="nickname nick-6">busu busuu kutty</div>
+    <div class="nickname nick-7">thangoooo</div>
+    <div class="nickname nick-8">eruma</div>
+    <div class="nickname nick-9">amirrrrr</div>
+    <div class="nickname nick-10">kundachii</div>
+
+    <!-- Moon & Stars -->
+    <div class="moon">🌙</div>
+    <div class="star star-1">⭐</div>
+    <div class="star star-2">✨</div>
+    <div class="star star-3">🌟</div>
+    <div class="star star-4">⭐</div>
+    <div class="star star-5">✨</div>
+    <div class="star star-6">🌟</div>
+
+    <!-- Rainbows -->
+    <div class="rainbow rainbow-1">🌈</div>
+    <div class="rainbow rainbow-2">🌈</div>
+    <div class="rainbow rainbow-3">🌈</div>
+    <div class="rainbow rainbow-4">🌈</div>
+    <div class="rainbow-arc arc-1"></div>
+    <div class="rainbow-arc arc-2"></div>
+
+    <!-- Cakes & Desserts -->
+    <div class="cake cake-1">🎂</div>
+    <div class="cake cake-2">🍰</div>
+    <div class="cake cake-3">🧁</div>
+    <div class="chocolate choco-1">🍫</div>
+    <div class="chocolate choco-2">🍫</div>
+    <div class="sprinkles sprinkle-1">🌈</div>
+    <div class="sprinkles sprinkle-2">✨</div>
+    <div class="sprinkles sprinkle-3">🌈</div>
+
+    <!-- Harry Potter Magical Wands -->
+    <div class="magic-wand wand-1">✨🪄</div>
+    <div class="magic-wand wand-2">🪄✨</div>
+
+    <!-- Magical Spells & Effects -->
+    <div class="spell-text spell-1">Expecto Patronum</div>
+    <div class="spell-text spell-2">Lumos</div>
+    <div class="magical-circle circle-1"></div>
+    <div class="magical-circle circle-2"></div>
+
+    <!-- Floating Photo Elements -->
+    <div class="login-photo login-photo-1"></div>
+    <div class="login-photo login-photo-2"></div>
+    <div class="login-photo login-photo-3"></div>
+    <div class="login-photo login-photo-4"></div>
+    <div class="login-photo login-photo-5"></div>
+    <div class="login-photo login-photo-6"></div>
+
+    <!-- Love Birds & Teddy Elements -->
+    <div class="love-bird love-bird-1">🕊️</div>
+    <div class="love-bird love-bird-2">🕊️</div>
+    <div class="teddy-bear teddy-1">🧸</div>
+    <div class="teddy-bear teddy-2">🧸</div>
+    <div class="love-decoration deco-1">💕</div>
+    <div class="love-decoration deco-2">💖</div>
+    <div class="love-decoration deco-3">💗</div>
+
+    <div class="login-container">
+      <h1 class="login-title">Welcome 💖</h1>
+      <p class="login-subtitle">Enter your details to continue</p>
+
+      <form id="login-form" class="login-form">
+        <div class="form-group">
+          <input type="text" id="username" class="form-input" placeholder="Username" required aria-label="Username" />
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="password" class="form-input" placeholder="Password" required
+            aria-label="Password" />
+        </div>
+
+        <button type="submit" class="login-btn" aria-label="Login">
+          Login ✨
+        </button>
+      </form>
+
+      <p class="login-error" id="login-error"></p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       QUIZ / VERIFY SCREEN
+  ════════════════════════════════════════════ -->
+  <div id="quiz-screen" role="main" aria-label="Amii Verification Quiz">
+    <div class="quiz-bg-hearts"></div>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <div class="quiz-emoji">🌸</div>
+        <h2 class="quiz-title">Verify You Are My Amii 💖</h2>
+        <p class="quiz-subtitle">Answer these special questions to unlock your surprise! 🎀</p>
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+        </div>
+        <p class="quiz-progress-text" id="quiz-progress-text">Question 1 of 5</p>
+      </div>
+
+      <div class="quiz-question-area" id="quiz-question-area">
+        <p class="quiz-question" id="quiz-question"></p>
+        <div class="quiz-options" id="quiz-options"></div>
+        <p class="quiz-feedback" id="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-result" id="quiz-result" style="display:none;">
+        <div class="quiz-result-emoji" id="quiz-result-emoji">🎉</div>
+        <h3 class="quiz-result-title" id="quiz-result-title"></h3>
+        <p class="quiz-result-msg" id="quiz-result-msg"></p>
+        <button class="quiz-continue-btn" id="quiz-continue-btn" style="display:none;">
+          Enter Your Surprise 🎂✨
+        </button>
+        <button class="quiz-retry-btn" id="quiz-retry-btn" style="display:none;">
+          Try Again 💕
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       1. LOADING SCREEN
+  ════════════════════════════════════════════ -->
+  <div id="loading-screen" role="main" aria-label="Loading Screen">
+    <div id="loading-hearts"></div>
+
+    <p class="headline">Hey Amiiiiii ✨✨… I made something special for you 💖</p>
+
+    <button id="enter-btn" aria-label="Enter the birthday surprise">
+      Click to Enter ✨
+    </button>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       SURPRISE PAGE (appears after clicking Enter)
+  ════════════════════════════════════════════ -->
+  <div id="surprise-screen" role="main" aria-label="Surprise Screen">
+    <button id="close-surprise-btn" aria-label="Continue to birthday page">Skip ✕</button>
+
+    <div class="surprise-content">
+      <h2 class="surprise-title">Before We Begin... 💝</h2>
+
+      <div class="surprise-carousel">
+        <div class="surprise-item active">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.35.34 PM.jpeg" alt="Memory 1" />
+          <p class="surprise-text">Every moment with you is precious 💖</p>
+        </div>
+
+        <div class="surprise-item">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.35.39 PM.jpeg" alt="Memory 2" />
+          <p class="surprise-text">Your smile lights up my world ✨</p>
+        </div>
+
+        <div class="surprise-item">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.35.44 PM.jpeg" alt="Memory 3" />
+          <p class="surprise-text">I am grateful for you everyday 🌸</p>
+        </div>
+      </div>
+
+      <div class="surprise-nav">
+        <button class="carousel-btn prev-btn">‹</button>
+        <div class="carousel-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+        <button class="carousel-btn next-btn">›</button>
+      </div>
+
+      <button id="continue-btn" class="continue-btn">Continue to Your Birthday 🎂✨</button>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       MAIN CONTENT (hidden until Enter clicked)
+  ════════════════════════════════════════════ -->
+  <div id="main-content">
+
+    <!-- Global Sparkles Canvas -->
+    <canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+
+    <!-- ══════════════════════════════════════
+         2. HERO SECTION
+    ══════════════════════════════════════ -->
+    <section id="hero" aria-label="Birthday Hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Happy Birthday My favourite person&nbsp;amiiiiiiiiiiii 🎂✨</h1>
+        <p class="hero-sub">
+          Today the universe paused just to celebrate you — the most magical,
+          warm-hearted, beautiful soul I have ever had the privilege of knowing.
+          You deserve every bit of joy the world has to offer. 🌸
+        </p>
+        <button id="open-gallery-btn" aria-label="View Our Beautiful Memories">View Our Memories 📸</button>
+      </div>
+    </section>
+  </div><!-- end #gallery-page -->
+
+
+  <!-- ══════════════════════════════════════
+       3. PHOTO MEMORY GALLERY (Full-Screen Overlay)
+  ══════════════════════════════════════ -->
+  <div id="gallery-page" role="dialog" aria-modal="true" aria-label="Our Beautiful Memories">
+    <div class="gallery-page-header">
+      <h2 class="gallery-page-title">Our Beautiful Memories 📸</h2>
+      <p class="gallery-page-sub">Every moment with you is one I'll treasure forever</p>
+      <button id="close-gallery-btn" aria-label="Close gallery">✕ Back</button>
+    </div>
+    <section id="gallery" class="section" aria-label="Memory Gallery">
+      <div class="gallery-grid">
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.35.34 PM.jpeg" alt="Amii memory 1" loading="lazy" />
+          <div class="gallery-caption">You are my everything 💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.35.39 PM.jpeg" alt="Amii memory 2" loading="lazy" />
+          <div class="gallery-caption">That smile brighter than the sun ☀️</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.35.44 PM.jpeg" alt="Amii memory 3" loading="lazy" />
+          <div class="gallery-caption">Every moment with you is magic ✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.35.45 PM.jpeg" alt="Amii memory 4" loading="lazy" />
+          <div class="gallery-caption">My favourite person in the world 🌸</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.16 PM (1).jpeg" alt="Amii memory 5" loading="lazy" />
+          <div class="gallery-caption">Pure joy, pure you 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.16 PM.jpeg" alt="Amii memory 6" loading="lazy" />
+          <div class="gallery-caption">You make the world beautiful 🌺</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.17 PM (1).jpeg" alt="Amii memory 7" loading="lazy" />
+          <div class="gallery-caption">My heart skips every time 💓</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.17 PM.jpeg" alt="Amii memory 8" loading="lazy" />
+          <div class="gallery-caption">You are my adventure 🌟</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.19 PM.jpeg" alt="Amii memory 9" loading="lazy" />
+          <div class="gallery-caption">Radiant, always 🌷</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.20 PM (1).jpeg" alt="Amii memory 10" loading="lazy" />
+          <div class="gallery-caption">Laughing with you is heaven 😍</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.20 PM.jpeg" alt="Amii memory 11" loading="lazy" />
+          <div class="gallery-caption">You are my safe place 🏠💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.21 PM (1).jpeg" alt="Amii memory 12" loading="lazy" />
+          <div class="gallery-caption">Forever in my heart 💗</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.21 PM (2).jpeg" alt="Amii memory 13" loading="lazy" />
+          <div class="gallery-caption">You are my sunshine ☀️🌸</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.21 PM.jpeg" alt="Amii memory 14" loading="lazy" />
+          <div class="gallery-caption">Precious memories we've made 📸</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.22 PM.jpeg" alt="Amii memory 15" loading="lazy" />
+          <div class="gallery-caption">You outshine every star ✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.24 PM.jpeg" alt="Amii memory 16" loading="lazy" />
+          <div class="gallery-caption">This smile heals my soul 🫶</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.25 PM (1).jpeg" alt="Amii memory 17" loading="lazy" />
+          <div class="gallery-caption">Beautifully, perfectly you 💝</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.25 PM (2).jpeg" alt="Amii memory 18" loading="lazy" />
+          <div class="gallery-caption">You make everything glow 🌟</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.25 PM.jpeg" alt="Amii memory 19" loading="lazy" />
+          <div class="gallery-caption">Love in every frame 💞</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.26 PM (1).jpeg" alt="Amii memory 20" loading="lazy" />
+          <div class="gallery-caption">My world, my Amii 🌍💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.26 PM.jpeg" alt="Amii memory 21" loading="lazy" />
+          <div class="gallery-caption">Forever and always 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.27 PM (1).jpeg" alt="Amii memory 22" loading="lazy" />
+          <div class="gallery-caption">Magical moments, just us 🌙</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.27 PM (2).jpeg" alt="Amii memory 23" loading="lazy" />
+          <div class="gallery-caption">My favourite smile in the universe 😊</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.27 PM.jpeg" alt="Amii memory 24" loading="lazy" />
+          <div class="gallery-caption">Every laugh, a treasure 💛</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.28 PM (1).jpeg" alt="Amii memory 25" loading="lazy" />
+          <div class="gallery-caption">You are my peace 🕊️💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.28 PM.jpeg" alt="Amii memory 26" loading="lazy" />
+          <div class="gallery-caption">Life is better with you 🌸</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.29 PM (1).jpeg" alt="Amii memory 27" loading="lazy" />
+          <div class="gallery-caption">Sweet memories, sweeter you 🍭</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.29 PM.jpeg" alt="Amii memory 28" loading="lazy" />
+          <div class="gallery-caption">Every day I fall more in love 💗</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.30 PM (1).jpeg" alt="Amii memory 29" loading="lazy" />
+          <div class="gallery-caption">You are my home 🏡💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.30 PM (2).jpeg" alt="Amii memory 30" loading="lazy" />
+          <div class="gallery-caption">Glowing, always 💫</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.30 PM.jpeg" alt="Amii memory 31" loading="lazy" />
+          <div class="gallery-caption">Cherished beyond words 💝</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.31 PM (1).jpeg" alt="Amii memory 32" loading="lazy" />
+          <div class="gallery-caption">You are my reason to smile 😊✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.31 PM.jpeg" alt="Amii memory 33" loading="lazy" />
+          <div class="gallery-caption">Unforgettable, irreplaceable 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.32 PM (1).jpeg" alt="Amii memory 34" loading="lazy" />
+          <div class="gallery-caption">My favourite chapter 📖💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.32 PM (2).jpeg" alt="Amii memory 35" loading="lazy" />
+          <div class="gallery-caption">Stars pale before you 🌟</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.32 PM.jpeg" alt="Amii memory 36" loading="lazy" />
+          <div class="gallery-caption">Lost in these eyes forever 👀💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.33 PM (1).jpeg" alt="Amii memory 37" loading="lazy" />
+          <div class="gallery-caption">Together is my favourite place 🫂</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.33 PM (2).jpeg" alt="Amii memory 38" loading="lazy" />
+          <div class="gallery-caption">Pure happiness, thanks to you 🌻</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.33 PM.jpeg" alt="Amii memory 39" loading="lazy" />
+          <div class="gallery-caption">You are the dream 💭💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.34 PM (1).jpeg" alt="Amii memory 40" loading="lazy" />
+          <div class="gallery-caption">Endless love, infinite memories 💞</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.34 PM (2).jpeg" alt="Amii memory 41" loading="lazy" />
+          <div class="gallery-caption">Every picture tells our story 📷✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.34 PM.jpeg" alt="Amii memory 42" loading="lazy" />
+          <div class="gallery-caption">Beautiful inside and out 🌹</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-24 at 10.36.35 PM.jpeg" alt="Amii memory 43" loading="lazy" />
+          <div class="gallery-caption">My whole heart, forever yours 💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-28 at 10.26.51 PM.jpeg" alt="Amii memory 44" loading="lazy" />
+          <div class="gallery-caption">Every moment with you is precious ✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-02-28 at 10.26.52 PM.jpeg" alt="Amii memory 45" loading="lazy" />
+          <div class="gallery-caption">You make my heart complete 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.57.04 AM.jpeg" alt="Amii memory 46" loading="lazy" />
+          <div class="gallery-caption">Happy Birthday to my love 🎉💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.57.05 AM (1).jpeg" alt="Amii memory 47" loading="lazy" />
+          <div class="gallery-caption">Another year of loving you 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.57.05 AM.jpeg" alt="Amii memory 48" loading="lazy" />
+          <div class="gallery-caption">You deserve all the joy 🌟</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.57.06 AM (1).jpeg" alt="Amii memory 49" loading="lazy" />
+          <div class="gallery-caption">Celebrating you today 🎂✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.57.06 AM.jpeg" alt="Amii memory 50" loading="lazy" />
+          <div class="gallery-caption">My favourite person 💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.06.22 AM.jpeg" alt="Amii memory 51" loading="lazy" />
+          <div class="gallery-caption">Your smile makes me happy 😊</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.06.23 AM.jpeg" alt="Amii memory 52" loading="lazy" />
+          <div class="gallery-caption">Beautiful as always 🌸</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.06.24 AM (1).jpeg" alt="Amii memory 53" loading="lazy" />
+          <div class="gallery-caption">Forever grateful for you 💝</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.06.24 AM (2).jpeg" alt="Amii memory 54" loading="lazy" />
+          <div class="gallery-caption">You light up my world ✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.06.24 AM.jpeg" alt="Amii memory 55" loading="lazy" />
+          <div class="gallery-caption">Happiest with you 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.06.25 AM.jpeg" alt="Amii memory 56" loading="lazy" />
+          <div class="gallery-caption">Every day is better with you 💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.12.38 AM.jpeg" alt="Amii memory 57" loading="lazy" />
+          <div class="gallery-caption">You are my sunshine 🌞</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.12.42 AM (1).jpeg" alt="Amii memory 58" loading="lazy" />
+          <div class="gallery-caption">All my love for you 💗</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.12.42 AM.jpeg" alt="Amii memory 59" loading="lazy" />
+          <div class="gallery-caption">My heart belongs to you 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 11.12.43 AM.jpeg" alt="Amii memory 60" loading="lazy" />
+          <div class="gallery-caption">Forever and always, my love 💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/niiii.jpeg" alt="Amii memory 61" loading="lazy" />
+          <div class="gallery-caption">You look amazing 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/vit.jpeg" alt="Amii memory 62" loading="lazy" />
+          <div class="gallery-caption">Beautiful moment captured 🌟</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/reee.jpeg" alt="Amii memory 63" loading="lazy" />
+          <div class="gallery-caption">Pure joy, pure you ✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.23.21 AM.jpeg" alt="Amii memory 64" loading="lazy" />
+          <div class="gallery-caption">My heart skips for you 💗</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.24.20 AM.jpeg" alt="Amii memory 65" loading="lazy" />
+          <div class="gallery-caption">Every frame is perfect 📸</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.57..jpeg" alt="Amii memory 66" loading="lazy" />
+          <div class="gallery-caption">Glowing with happiness 💫</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-01 at 10.57.05 .jpeg" alt="Amii memory 67" loading="lazy" />
+          <div class="gallery-caption">You are everything to me 💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-04 at 11.50.35 PM.jpeg" alt="Amii memory 68" loading="lazy" />
+          <div class="gallery-caption">Newer memories, always precious 💕</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-04 at 11.50.36 PM.jpeg" alt="Amii memory 69" loading="lazy" />
+          <div class="gallery-caption">You glow in every photo ✨</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-04 at 11.50.36 PM (1).jpeg" alt="Amii memory 70" loading="lazy" />
+          <div class="gallery-caption">My heart is full because of you 💖</div>
+        </div>
+
+        <div class="gallery-card glass fade-in-scroll">
+          <img src="images/WhatsApp Image 2026-03-04 at 11.50.59 PM.jpeg" alt="Amii memory 71" loading="lazy" />
+          <div class="gallery-caption">Every second with you is magic 🌸</div>
+        </div>
+
+        <!-- ── VIDEOS ── -->
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.35.38 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">A moment I'll never forget </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.35.44 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">You move like magic 🌸✨</div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.15 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon">▶</div>
+          <div class="gallery-caption">Captured forever 💖</div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.17 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">My favourite memory </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.18 PM (1).mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">You light up everything </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.18 PM (2).mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">Pure joy, pure you </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.18 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">This smile heals me </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.19 PM (1).mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">Living in this moment </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.19 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">You are my world </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.22 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">Magical, always </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.23 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">I treasure every second </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.24 PM (1).mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">My heart skips every time </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.24 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">Radiant, forever </div>
+        </div>
+        <div class="gallery-card glass fade-in-scroll video-card" data-type="video">
+          <video src="images/WhatsApp Video 2026-02-24 at 10.36.28 PM.mp4" playsinline preload="metadata"></video>
+          <div class="video-play-icon"></div>
+          <div class="gallery-caption">My favourite person in the universe </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- end #gallery-page -->
+
+  <!-- ══════════════════════════════════════
+         4. LOVE LETTER
+    ══════════════════════════════════════ -->
+  <section id="love-letter" class="section" aria-label="Love Letter">
+    <h2 class="section-title fade-in-scroll">A Letter From My Heart 💌</h2>
+    <p class="section-sub fade-in-scroll">Written with love, just for you</p>
+
+    <div id="love-letter-card" class="letter-card glass fade-in-scroll">
+      <div class="letter-hearts"></div>
+      <p class="letter-title">My Dearest Amiiiiii…</p>
+      <div id="typewriter-text" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+         5. COUNTDOWN TIMER
+    ══════════════════════════════════════ -->
+  <section id="countdown" class="section" aria-label="Birthday Countdown">
+    <h2 class="section-title fade-in-scroll">Counting Down to Your Day ⏳</h2>
+    <p class="section-sub fade-in-scroll">Every second brings us closer to celebrating you</p>
+
+    <div class="countdown-wrap fade-in-scroll">
+      <div class="cd-box glass">
+        <span class="cd-num" id="cd-days">00</span>
+        <span class="cd-label">Days</span>
+      </div>
+      <div class="cd-box glass">
+        <span class="cd-num" id="cd-hours">00</span>
+        <span class="cd-label">Hours</span>
+      </div>
+      <div class="cd-box glass">
+        <span class="cd-num" id="cd-minutes">00</span>
+        <span class="cd-label">Minutes</span>
+      </div>
+      <div class="cd-box glass">
+        <span class="cd-num" id="cd-seconds">00</span>
+        <span class="cd-label">Seconds</span>
+      </div>
+    </div>
+    <p class="cd-subtitle fade-in-scroll">Counting every second until your special day 💫</p>
+  </section>
+
+  <!-- ══════════════════════════════════════
+         6. SURPRISE BUTTON
+    ══════════════════════════════════════ -->
+  <section id="surprise" class="section" aria-label="Birthday Surprise">
+    <h2 class="section-title fade-in-scroll">I Have a Surprise For You 🎁</h2>
+    <p class="section-sub fade-in-scroll">Are you ready? Something magical is waiting…</p>
+
+    <button id="surprise-btn" class="fade-in-scroll" aria-label="Tap for your surprise">
+      Tap for Your Surprise 🎁
+    </button>
+  </section>
+
+
+  </div><!-- end #main-content -->
+
+  <!-- ════════════════════════════════════════════
+       FIREWORKS CANVAS (global fixed)
+  ════════════════════════════════════════════ -->
+  <canvas id="fireworks-canvas" aria-hidden="true"></canvas>
+
+  <!-- ════════════════════════════════════════════
+       FINAL OVERLAY MESSAGE
+  ════════════════════════════════════════════ -->
+  <div id="final-overlay" role="dialog" aria-modal="true" aria-label="Final surprise message">
+    <p class="final-msg">
+      You are the best thing that ever happened to me.<br />
+      I love you forever ❤️
+    </p>
+    <button class="close-btn" aria-label="Close surprise message">
+      Close ✕
+    </button>
+
+    <!-- ── LOVE MESSAGE BOX ── -->
+    <div class="final-love-box">
+      <div class="final-love-box-hearts">💖 💕 💗 ✨ 💫 🌸 💖 💕 💗 ✨ 💫 🌸</div>
+      <div class="final-love-box-inner">
+        <span class="final-love-icon">💌</span>
+        <h3 class="final-love-title">My Amii, My Everything</h3>
+        <p class="final-love-line">Every single day with you is a blessing I never take for granted.</p>
+        <p class="final-love-line">You are my home, my peace, my greatest joy.</p>
+        <p class="final-love-line">No words in the world could ever describe how much I love you.</p>
+        <div class="final-love-divider">— ❤️ —</div>
+        <p class="final-love-signature">Forever &amp; always yours 💕</p>
+      </div>
+    </div>
+
+    <!-- ── SPECIAL LETTER INSIDE OVERLAY ── -->
+    <div class="final-special-letter-wrap">
+      <h2 class="final-overlay-letter-title">A Letter From My Heart 💌</h2>
+      <p class="final-overlay-letter-sub">Written with love, just for you</p>
+
+      <div class="special-letter-card glass">
+        <div class="special-letter-top-badge">happiest birthday thangooo 🥳 💖 loosu 🫂 mental 💙</div>
+        <h3 class="special-letter-heading">My Dear Bujik Bujik Amii 🍅✨</h3>
+        <div class="special-letter-body">
+          <p>Happiest birthday amiii 😭🫂❤️❤️.</p>
+          <p>Ennodya life Eey ne enaku kedacha oru varam, gift 🎁🧧.</p>
+          <p>Unkooda irukum podhu na romba happy 🥳 aaa iruken, enaku ne epovum ennaodya life Venum thangooo 🫂🫂❤️❣️.
+            Unna enakuu romba pidikum naaye 🫂🩷.</p>
+          <p>Intha clg Eey ne enaku kedacha oru periya giftt 🥺🫠.</p>
+          <p>Unkooda life la long irukanum 🫂. Enkoodave iru thangooo ❤️🩹💔.</p>
+          <p>Ennaodya thangoo 🪙, gold 🪙 uuu, diamond 💎💍 neeee.</p>
+          <p>Unkooda .... Ne epovum life la sandhoshama irukanum ✨✨✨. Adha ennodya aasa.</p>
+          <p>Epovum unnodya place aa Yaruku kuduka maatenn 🫂. Unna maari yaarum Iruka maataanga loosu 🥺🥺😭.</p>
+          <p>Na ivlo torture pannalam ne yen koodave tha irundha 🫂😫. Adhey maari life long epovum en koodave iru
+            loosuu 🙏🙏.</p>
+          <p>Na unna evlo tha po po nu sonnalaum enna vitutu poidaatha 😩😭. Loosu. Unna vitutuu enna la Iruka
+            mudiyaathu 😭.</p>
+          <p>Na ippo sandhosama iruken na Athuku ne matum tha reason 💙.</p>
+          <p>Intha clg Eey ne matum enna madichi, response kuduthu pesuna oru aal 🥺. Adha enaikum na maraka maaten
+            loosuu 🌹.</p>
+          <p>Adhey maari unna enaikum vitutu poganum maaten 👥🫂🫂. Ne illa ma ennala la Iruka mudiyaathu 😭.</p>
+          <p>Enaku enna solrathu nu thryla. Unna enaku romba pidikum naaye 🫂🩷. Epovum unaku first priority kudupen 💯.
+          </p>
+          <p>En life yaaru vandhlum unna yaaralaium replace panna mudiyaadhu ✨. Ne romba romba good girl 🫂💙. Unna
+            maari yaarum Iruka matanga loosu 🥹.</p>
+          <p>Na evlo vaati unna kasta paduthi irundhaalum. Ne enna vitutu pogala 🥹. Vera yarachum irundha kandipa poi
+            irundhu irupqanga 💯.</p>
+          <p>Enaku therium ne enna vitutu engayum poga maaten nu. Apdiye ne enna vitutu poganum nu nenachen nu vachikoo
+            yen. Sathiyama unna kondruven 👊.</p>
+          <p>Ennodya ulagame 🌎 ne tha — unaku edachum aachuna enna la thanga Mudiyathu eruma 💔.</p>
+          <p>Epovum batharama iruu, nalla sapduu, epovum ne kundave iruu.</p>
+          <p>Enodaya ami ✨, ennaodya loosu 🫂, ennaodya thangoo 🪙, ennaodya bujik bujik bujik ami 🍅🍅, sothu maadu,
+            eruma, panni, mental, 🔪 kiruku, saniyanee — unna Yaruku aagavum vitu kuduka maten epovum 💯.</p>
+          <p>Ne tha ennaku romba romba mukiyam 💙. Unaku aaga enna venalum pannuven 🫠.</p>
+          <p>Ne illa ma enna la sandhoshama Iruka mudiyaathu amiii 😭🤧 please enna vitutu poidaatha dii amii 😭🥹.</p>
+          <p>Enkoodave iru thangooo 🫂🫂. Na romba lucky Therium aaa 🫠. Enodaya life la enaku oru gold 🥇 kedachu
+            irukuu 😭. Na romba lucky person in the world 🌎🌎.</p>
+          <p>Unna mari person kedaikurtahu varam 💙. Ne enaku kedacha oru varam 🫂🫀.</p>
+          <p>Ennodya life ley unnaa tha loosu na romba nambi iruken 🫀💯. Unna tha na romba nambi iruken 💯. Epovum na
+            unna matum tha nambuven. Unna epovum yaaruku aagum unna vitu kuduka maaten 😭.</p>
+          <p>Un mela vachi anbu enaikum maaradhuu 😭🫠 loosu. Namma evlo tha sanda potalum namma rendu perum vitukuduka
+            koodadhu 😭. Pesama la Iruka koodadhu 😭. Thaniya vitutu poga koodadhu 🫂.</p>
+          <p>Epovum nama rendu perum onna ve sandhoshama irukanum 🫂❣️❤️🩹✨🥳🥳. Evlo sanda potalum sari namma rendu
+            perum poga koodadhu 🫂. We are made for eachother 🫂✨.</p>
+          <p>Sandhoshama iru loosu epovum 😁😁. But na unna eppovume distrub panitu, torture panitu tha irupen 😁😂 athu
+            enaikum maaradhuu 😁🫣🫣🤭. Epovum na sanda potu kitte thaa irupen 😁.</p>
+          <p>Ne enna compromise pannanum athu unnodaya kadamai 👥 thangoooo 🫂. Enna vitutu pogala nu kanavula kooda
+            nenachiraadha 🔪🔪. Unna kondruven, avlo tha ne 🔪.</p>
+          <p>I born to disturb you 😁. Unna maari oru loosu yaaruku kedaika maatanga aana enaku ne kedachiii irukaa
+            🌎🫂. Na tha luckyyyyyy 💯.</p>
+          <p>Enodaya thangooo ne, bujik bujik amii 🍅🍅. Epovum ne busy busu nu iruu naaye 🫂🩷. Apo tha ne alaga irupa
+            ❣️✨.</p>
+          <p>Unnodaya cheeks enaku romba pidikum naaye. Nalla busu buusu nu irukum 😌😌🫣. Killanum pola irukum 😌🫣.
+            Avlo alaga Irukum unodaya kannam. Epovum Apdiye iruu.</p>
+          <p>Loosu un life la na illa na ennna maranthuraadha 🫠🙂 sariya. Naanum unna epovum maraka maaten loosuu
+            🌹🫂❣️✨.</p>
+          <p>Ennodya place aa yarukum kudukaadhaaa loosu... antha place yaarukum kudukaadhaa 🙏🙏. Enna maari yaaru
+            iruka maatangaa loosuuu 🫠. Athey maari una maari yaaru iruka maatangaa loosuuu, enodaya thangooo 😌☺️.. ne
+            enaku mattum tha 🫂.</p>
+          <p>Ne ennodya thangam, ennodya ami 🫂. Unna yaarukum thara maaten 💙. Ne enaku mattum thaa 🫂✨❣️. Enodaya
+            bujik bujik amii 🍅🍅.</p>
+          <p>Amiii. Amii. Ne romba alagu therium aaa. Semma alagu ne. Cutie 🥰🥰😊, beautiful girl, pretty 😍, entha
+            dress potalum ne alaga irupa thangam ✨❤️. Ne avlo alagu therium aaa ✨✨. I can't explain your Beauty 😍. So
+            so so prettiest girl 🫂❣️. Ennodya loosu avlo alaga irupaa 😭.</p>
+          <p>Chicken rice na ennodya thangam ku romba pidikum 😁. Soru soru nu epovum suthi kittu irupa 😂. Ava uyiroda
+            irukuratheyy sapda maatum thaa. Nalla sapduva, 24/7 saptuu kitte irupa eruma 😂. Apdiye iruu naaye. Nalla
+            sapdu thangoooo 🫂.. ne ennodya ami 🫂.</p>
+          <p>Aprm ne yaarta pesunalum enaku romba kasta ma irukuum loosu 😩. Enodaya thangooo kitta vera oruthan pesitu
+            irukan nu nenachaley enaku semma kovam varummm 🔪😤. Ne enaku mattum thaa 🫂. Mine ❤️.</p>
+          <p>Ne enaku oru kolandha maari loosu 🥹. Una epovum na nalla paathupen unna vitutuu engayum poga maten amii
+            🫂. Enaku onna vita yaarum ilaa 😭. Enna epovum thaniya vitutu poidaatha dii amii 😭.</p>
+          <p>Ne ennodya life la vandhadhuku romba romba romba nandri 🙏🙏🙇‍♂️ enaku enodaya life kedacha oru periya
+            giftt 🥺🫠. You are my best chapter in my life 🌎. Ne tha enaku romba pudicha ponnu ❤️🩹.</p>
+          <p>Romba romba pudikumm unna enakuu 😫😩. Ennodya life unna romba trust panni irukaa ✨. Unna matum tha eppovum
+            na namburen. Unna na paathukren amii 😭🥹.. eppovume ne enaku oru kolandha maari 🫂.</p>
+          <p>Unkita na sanda potalum sari, pesatalum sari. Unaku onnu na epovum unaku aaa na varuven. Unaku aaaga na
+            varuven. Ne eppo kooptalumm na un kooda vandhu nipen 💯. Unaku aaga na enna venalum pannuven 🥺 loosu.</p>
+          <p>Evlo venalum enna thitu, adi, but thayavu senji enna vitutu poidaatha dii amii 😭 naaye 🙏. Ne illa ma oru
+            naal kooda na Iruka maaten 😭.</p>
+          <p>Ennaodya kolandha ne 🐥🐥🍼. Buusu busuuu kutty. 🍅🍅🍅. Unaku maatum na epovum first priority kudupen
+            loosu. En life vera entha ponnukum unnodaya place aa kuduka maaten 🌎.</p>
+          <p>Unna yaaralyum replace panna mudiyaadhu 🫂. You are so special person in my life 🌎🫂❣️. Enodaya thangooo
+            ne. gold 🥇🪙🪙 uuu, diamond 💎 uuu.</p>
+          <p>First first unna na topper 🔥 nu koopduven yebagam Iruka 😂. Topper+amirr+amii+di+loosu+thangooo. Evlo
+            alaga Iruku la ❤️🩹.</p>
+          <p>Namma life neraya sanda potutom. But still nama rendu perum yaariyum vitu kudukala.. yen na nama rendu
+            perum. Made for each other 🫂.</p>
+          <p>Ne illa ma Naanum Iruka maaten 😭. Na illa ma neeum Iruka maata ❤️✨. Rendu perum vitu kuduka koodadhu 😭.
+            Namma rendu perum epovum onna ve irukanum ✨❤️. Epovum. Until my last breath 🫁🫁.</p>
+          <p>You are reason to my smile 😊😁. You are my stress buster. My another part of my soul.. ennodya manasula
+            irundhu unnodaya yebagam tha eduka ve mudiyaathu 😭. Unna yosika ma ennala oru second kooda Iruka mudiyaathu
+            😭.</p>
+          <p>Unna enaku avlo pudikum loosu. Ne ennodya uyir 🫁. Uyir, ennaodya ulagame 🌎 ne thaa. Unna vitutuu na poga
+            ve maaten.</p>
+          <p>Intha birthday unodaya best birthday aa va irukanum ✨❤️. Ne Life la sandhoshama Irukanum adha enodaya aasai
+            🫠�. Epovum sirichi kitee irukanumm 😆. Ne Life la nalla irukanum ✨❤️. Adha paathu na sandhosama Irupen 😭.
+          </p>
+          <p>Na un life irukurano ilayo. But unaku na aa epoovum na pray panuven. Unaku onnu na vandhu nipen 💯. Unna
+            life la eppovum veruka ve maaten 😭. You are my best chapter in my life 🌎�🫂❣️. Thangoooo.</p>
+          <p>Last aa mudichikren loosu 😁😁. Sandhoshama iru, happy aa iru, nalla padi, placement epoadi aachum vangidu,
+            nalla sapdu, enna maranthuraadha �, odambu paathuko, ennodya place aa yaarukum kudukaadhaa 🙏, epo unaku
+            jakaas theva patalum, help theva patalum ne ena koopdu. Unaku na irukan �🫂❤️.</p>
+          <p>Once again. Happiest birthday my dear loosu ❤️🩹. You are the best memories in my life. Best one 😌😌. Such
+            a beautiful girl ❤️🩹. Pretty little baby. Happy Birthday my lovable ami thangoooo 🫂❣️🫂. Please don't
+            forget me 😭.</p>
+          <p class="special-letter-closing">- by unnodaya loosu 💙🫂</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SPECIAL GIFT SECTION ── -->
+    <div class="special-gift-wrap">
+      <h2 class="special-gift-heading">🎁 Special Gift For You Thangooooo 🎁</h2>
+      <div class="special-gift-grid">
+
+        <div class="special-gift-card glass">
+          <img src="first gift .jpeg" alt="Special Gift Photo 1" />
+          <div class="special-gift-caption">You are my favourite person 💖</div>
+        </div>
+
+        <div class="special-gift-card glass">
+          <img src="secondgift.jpeg" alt="Special Gift Photo 2" />
+          <div class="special-gift-caption">My heart belongs to you forever 🌸</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ════════════════════════════════════════
+       BACKGROUND MUSIC
+  ════════════════════════════════════════ -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="artic monkey/arctic_monkey_-_i_wanna_be_yours_(mp3.pm).mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ════════════════════════════════════════
+       FLOATING MUSIC BUTTON
+  ════════════════════════════════════════ -->
+  <button id="music-btn" aria-label="Toggle Music">🎵</button>
+
+  <!-- ════════════════════════════════════════
+       PHOTO LIGHTBOX
+  ════════════════════════════════════════ -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button id="lb-close" aria-label="Close photo">✕</button>
+    <button id="lb-prev" aria-label="Previous photo">&#8249;</button>
+    <button id="lb-next" aria-label="Next photo">&#8250;</button>
+    <div id="lb-img-wrap">
+      <img id="lb-img" src="" alt="Full photo" style="display: none;" />
+      <video id="lb-video" controls style="display: none; width: 100%; height: 100%; object-fit: contain;"></video>
+    </div>
+    <p id="lb-caption"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
