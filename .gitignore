@@ -1,0 +1,28 @@
+# Large media files - exclude from git
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.avi
+*.AVI
+*.mkv
+*.MKV
+*.wmv
+*.WMV
+
+# Large images (optional - comment out if you want images included)
+# *.png
+# *.jpg
+# *.jpeg
+# *.PNG
+# *.JPG
+# *.JPEG
+
+# WhatsApp media
+WhatsApp Video*
+WhatsApp Image*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
